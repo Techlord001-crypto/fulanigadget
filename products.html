@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu |FULANI GADGETS </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <style>
+    /* ===== Search Bar Styling ===== */
+    .search-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 40px 0 20px;
+    }
+
+    #searchBar {
+      width: 90%;
+      max-width: 400px;
+      padding: 12px 18px;
+      border: 2px solid #000;
+      border-radius: 30px;
+      outline: none;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    #searchBar:focus {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .no-results {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      color: #555;
+      margin-top: 40px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="slazzer-preview-2znhh.png" alt="FULANI GADGETS">
+    </div>
+
+    <!-- Desktop links -->
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Our products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+
+    <!-- Hamburger (hidden on desktop) -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Our products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </div>
+
+  <section class="welcome">
+    <h1 style="text-align:center;">OUR PRODUCTS</h1>
+  </section>
+
+  <!-- 🔍 Search Bar Section -->
+  <div class="search-container">
+    <input type="text" id="searchBar" placeholder="Search for products...">
+  </div>
+
+  <main>
+    <section class="menu-section">
+
+      <h2 class="menu-title" style="text-align:left;">IPHONES</h2>
+      <div class="menu-cards">
+        <div class="menu-card" data-id="1">
+          <img src="image.png" alt="Iphone 17 pro">
+          <h3>Iphone 17 Pro</h3>
+          <strong>₦2,200,000</strong>
+          <button class="btn add-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-card" data-id="2">
+          <img src="iphone 17 air.png" alt="Iphone 17 air">
+          <h3>Iphone 17 Air</h3>
+          <strong>₦1,900,000</strong>
+          <button class="btn add-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-card" data-id="3">
+          <img src="slazzer-preview-sqlf0.png" alt="Iphone 17 pro-max">
+          <h3>Iphone 17 Pro-Max</h3>
+          <strong>₦2,500,000</strong>
+          <button class="btn add-cart-btn">Add to Cart</button>
+        </div>
+      </div><br><br>
+
+      <h2 class="menu-title" style="text-align:left;">ANDROIDS</h2>
+      <div class="menu-cards">
+        <div class="menu-card" data-id="4">
+          <img src="SAMSUNSUNG S25 ULTRA.png" alt="Samsung S25 Ultra">
+          <h3>Samsung S25 Ultra</h3>
+          <strong>₦2,500,000</strong>
+          <button class="btn add-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-card" data-id="5">
+          <img src="GOOGLE PIXEL 10 PRO.png" alt="GOOGLE PIXEL 10 PRO">
+          <h3>Google Pixel 10 Pro</h3>
+          <strong>₦2,300,000</strong>
+          <button class="btn add-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-card" data-id="6">
+          <img src="SAMSUNG A-56.png" alt="SAMSUNG A56">
+          <h3>Samsung A56</h3>
+          <strong>₦570,000</strong>
+          <button class="btn add-cart-btn">Add to Cart</button>
+        </div>
+      </div><br><br>
+
+      <h2 class="menu-title" style="text-align:left;">PHONE ACCESSORIES</h2>
+      <div class="menu-cards">
+        <div class="menu-card" data-id="7">
+          <img src="Gaming headset.png" alt="Gaming Headsets">
+          <h3>Gaming Headsets</h3>
+          <strong>₦150,000</strong>
+          <button class="btn add-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-card" data-id="8">
+          <img src="airpod pro.png" alt="Airpod Pro">
+          <h3>Airpod Pro</h3>
+          <strong>₦200,000</strong>
+          <button class="btn add-cart-btn">Add to Cart</button>
+        </div>
+        <div class="menu-card" data-id="9">
+          <img src="iphone headsets.png" alt="Iphone Headsets">
+          <h3>Iphone Headsets</h3>
+          <strong>₦200,000</strong>
+          <button class="btn add-cart-btn">Add to Cart</button>
+        </div>
+      </div><br><br>
+    </section>
+
+    <p class="no-results">No products found 😢</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p class="quicklinks">Quick Links</p>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Our products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+    <p>&copy; 2025 ZEERID INTERNATIONAL CONCEPTS. All rights reserved.</p>
+    <p>Designed by Tech Titans</p>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="products.js"></script>
+
+  <!-- 🔍 Search Bar Functionality -->
+  <script>
+    const searchBar = document.getElementById("searchBar");
+    const products = document.querySelectorAll(".menu-card");
+    const noResults = document.querySelector(".no-results");
+
+    searchBar.addEventListener("keyup", () => {
+      const query = searchBar.value.toLowerCase().trim();
+      let matchCount = 0;
+
+      products.forEach(card => {
+        const productName = card.querySelector("h3").textContent.toLowerCase();
+        if (productName.includes(query)) {
+          card.style.display = "";
+          matchCount++;
+        } else {
+          card.style.display = "none";
+        }
+      });
+
+      noResults.style.display = matchCount === 0 ? "block" : "none";
+    });
+  </script>
+</body>
+</html>
